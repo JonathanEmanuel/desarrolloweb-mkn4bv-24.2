@@ -6,3 +6,56 @@
 h1, h2 {
     color: teal;
 }
+
+.foto {
+    border: 2px solid #272727;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-icon:hover img{
+    width: 56px;
+    height: auto;
+}
+
+.violeta {
+    color: blueviolet;
+}
+
+p {
+    color: teal;
+}
+
+.box-1 {
+    padding: 10px;
+    border: 2px solid #272727;
+    width: 200px;
+    height: 300px;
+    overflow: auto;
+}
+
+.box-2 {
+    border: 2px solid #272727;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.box-3 {
+    border: 2px solid #272727;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(images/juan_perez.jpg);
+    background-position: 35% 10%;
+
+}
+
+footer {
+    background-color: #272727;
+}
+
+footer p {
+    color: white;
+}
