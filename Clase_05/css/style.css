@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(56, 56, 56);
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h1, h2, ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: teal;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+nav {
+    background-color: #2a2929;
+}
+
+nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    min-height: 5vh;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: wheat;
+}
+
+section {
+    min-height: 100vh;
+    border: 2px solid #2a2929;
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-blue {
+    background-color: steelblue;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.img-responsive {
+    min-width: 90%;
+   /*  background-color: tomato; */
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2929;
+}
+
+footer p {
+    color: white;
+
+}
+
+
+/* Consulta de Medios */
+
+/* Desktop */
+@media  screen and (max-width: 1440px) {
+    .bg-dispositivos {
+        background-color: #72CEF2;
+    }
+    h1 {
+        font-size: 104px;
+        text-align: center;
+    }
+}
+
+/* Laptop */
+@media  screen and (max-width: 1025px) {
+    .bg-dispositivos {
+        background-color: #F25764;
+    }
+
+
+    section {
+        width: 90vw;
+    }
+    h1 {
+        font-size: 74px;
+    }
+}
+/* Tablet */
+@media  screen and (max-width: 768px) {
+    .bg-dispositivos {
+        background-color: #FEE79B;
+    }
+
+    section {
+        width: 95vw;
+    }
+    .img-responsive {
+        min-width: 95%;
+       /*  background-color: tomato; */
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
+/* Celular m */
+@media  screen and (max-width: 425px) {
+    .bg-dispositivos {
+        background-color: #F28729;
+    }
+
+    section {
+        width: 100vw;
+    }
+    .img-responsive {
+        min-width: 100%;
+       /*  background-color: tomato; */
+    }
+    h1 {
+        font-size: 33px;
+    }
+
+    nav ul {
+        gap: 5px
+    }
+}
+/* Celular s */
+@media screen and (max-width: 375px) {
+
+    h1 {
+        font-size: 28px;
+    }
+    .bg-dispositivos {
+        background-color: #03A678;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
