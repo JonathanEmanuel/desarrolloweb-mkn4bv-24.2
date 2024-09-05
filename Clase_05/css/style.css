@@ -93,8 +93,7 @@ footer p {
 }
 
 
-/* Consulta de Medios */
-
+/* CONSULTAS DE MEDIOS */
 /* Desktop */
 @media  screen and (max-width: 1440px) {
     .bg-dispositivos {
