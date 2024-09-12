@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(56, 56, 56);
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h1, h2, ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: teal;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:16px
+}
+
+h1 {
+    color: white;
+}
+
+nav {
+    background-color: #2a2929;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    min-height: 5vh;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: wheat;
+}
+
+
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2929;
+}
+
+footer p {
+    color: white;
+
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+input:hover {
+    width: 500px;
+
+}
+
+input:focus {
+    width: 500px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.box {
+    background-color: teal;
+    border: 4px solid #2a2929;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: cell;
+
+    transition: all 3s;
+}
+
+.box p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.box i {
+    font-size: 48px;
+    color: white;
+}
+.translate:hover {
+    transform: translate(50px, -100px);
+}
+
+.house {
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.house:hover {
+    animation-play-state: paused;
+}
+
+.circle {
+    animation-name: circulo;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.circle:active {
+    animation-play-state: paused;
+
+}
+
+@keyframes zoom {
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes circulo {
+    0% {
+        border-radius: 20%;
+        transform: skew(10deg);
+    }
+    
+    30% {
+        background-color: steelblue;
+        transform: translateY(-100px) skew(20deg);
+        box-shadow: 2px 5px 10px #2a2929;
+    }
+
+    60% {
+        background-color: steelblue;
+        transform: translateX(-100px) translateY(-100px) skew(10deg);
+        box-shadow: 2px 5px 10px #2a2929;
+
+    }
+
+    90% {
+        transform: translateX(-100px) translateY(0px) skew(10deg);
+        box-shadow: -2px -5px 10px #2a2929;
+    }
+
+    100% {
+        border-radius: 50%;
+        background-color: slateblue;
+        transform: skew(0deg);
+
+    }
+}
+
+.seccion {
+    border:  2px solid #2a2929;
+    width: 80vw;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    overflow: hidden;
+}
+
+.violet {
+    background-color: slateblue;
+}
+
+.green {
+    background-color: rgb(59, 162, 162);
+}
+
+.red {
+    background-color: tomato;
+}
+
+.item {
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.item:hover {
+    animation-play-state: paused;
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-700px);
+    }
+}
