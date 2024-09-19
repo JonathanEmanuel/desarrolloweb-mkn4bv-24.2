@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Imágenes</title>
+  <link rel="stylesheet" href="libs/lightbox/css/lightbox.min.css">
+  <link rel="stylesheet" href="libs/glightbox/css/glightbox.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Galería de Imágenes</h1>
+    </header>
+    <main>
+        <section class="galeria">
+            <a href="images/paris.jpg" data-lightbox="roadtrip" data-title="Foto de Paris">
+                <img class="item" src="images/paris_s.jpg" alt="Paris">
+            </a>
+            <a href="images/heksinki.jpg" data-lightbox="roadtrip" data-title="Foto de Helsinki">
+                <img class="item" src="images/heksinki_s.jpg" alt="Helsinki">
+            </a>
+            <a href="images/caba.jpg" data-lightbox="roadtrip" data-title="Foto de CABA">
+                <img class="item" src="images/caba_s.jpg" alt="CABA">
+            </a>
+            <a href="images/caba2.jpg" data-lightbox="roadtrip" data-title="Foto de CABA">
+                <img class="item" src="images/caba2_s.jpg" alt="CABA">
+            </a>
+
+            
+            <a href="images/rusia.jpg"  
+                class="glightbox3" 
+                data-gallery="gallery1" 
+                data-glightbox="title: Rusia; description: Foto de Rusia" >
+                <img class="item" src="images/rusia_s.jpg" alt="Rusia">
+            </a>
+            <a href="images/tokio.jpg" class="glightbox3" data-gallery="gallery1">
+                <img class="item" src="images/tokio_s.jpg" alt="Tokio">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p> ISEC | Desarrollo Web | 2024</p>
+    </footer>
+    <script src="libs/lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="libs/glightbox/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox();
+        var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+        });
+    </script>
+</body>
+</html>
