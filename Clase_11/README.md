@@ -3,9 +3,9 @@
 ## 🎯 Temas de la clase
 
 
-📌 **Componentes Básicos** 
+📌 **Componentes** 
 - Card
 - Botones
 - Formularios
 - Carrusel
-- Menu de navegación
+![Captura de Pantalla!](images/screencapture.png "Captura de Pantalla")
